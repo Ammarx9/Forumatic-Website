@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create CLO</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./general.css"/>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./login.html" id="N_login">Log in</a></li>
+        <li><a href="./savedReports.html">View Documents</a></li>
+    </ul><br><br>
+    <div class ="container">
+
+        <h1>Create New CLO</h1>
+        
+        <table>
+            <tr>
+                <th>
+                    <h3>PLO: <select name="S_PLO" id="S_PLO"></select></h3>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Type:</h3>
+                    <input type="radio" name="R_type" id="Knowledge" value="Knowledge" checked>Knowledge
+                    <input type="radio" name="R_type" id="Skill" value="Skill">Skill
+                    <input type="radio" name="R_type" id="Value" value="Value">Value
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Learning Outcomes: <input type="text" name="" id="I_LearningOutcomes"></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Assessment Method: <input type="text" name="" id="I_assessmentMethod"></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Target Value: <input type="number" name="" id="I_TargetLevel"></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Teching Strategies: <input type="text" name="" id="I_teachingStrageties"></h3>
+                </td>
+            </tr>
+        </table>
+
+        <input type="button" value="Create" style="width: 100%;" id="B_create">
+
+    </div>
+    <script src="./javascript/createCLO.bundle.js"></script>
+</body>
+</html>

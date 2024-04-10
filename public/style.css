@@ -1,0 +1,540 @@
+
+#main {
+    font-family: sans-serif;
+
+    background-image: linear-gradient(rgba(130, 26, 154, 0.7),rgba(187, 0, 244, 0.7)),url("assets/images/background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+   background-position: center;
+   box-sizing: border-box;
+   padding-left: 8%;
+   padding-right: 8%;
+  }
+  
+
+  #login_main {
+    background: linear-gradient(to top right, #6a1b9a, rgb(113, 158, 210));
+    height: 100vh;
+    overflow:  hidden;
+    padding: 0;
+    margin: 0;
+    
+    display: flex;
+  }
+  #center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    padding: 50px 40px;
+    box-sizing: border-box;
+    
+  }
+  .login{
+    display: inline-block;
+  }
+ 
+  #center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    /* border-bottom: 1px solid silver; */
+  }
+  #center .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  .navBar  ul {
+    background: transparent;  list-style: none;   list-style: none; 
+    size: 15px;
+    
+  }
+  .navBar li{
+    display: inline-block;
+            margin-right: 10px;
+
+  }
+  .navBar a {
+    text-decoration: none;
+      color: white;
+      position: relative;
+  }
+
+  .txt_field input{
+    width: 100%;
+    padding: 0 5px ;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .txt_field label {
+    position: absolute;
+    top: 10%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+  }
+  .btn_reg {
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 25px;
+    color: #333;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    background: #6a1b9a;
+
+  }
+  .btn_reg:hover{
+    /* border-color: #2691d9; */
+    transition: .5s;
+  }
+   .singup{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+
+   }
+   .singup a{
+    color: #2691d9;
+    text-decoration: none;
+   }
+   .singup a :hover {
+    text-decoration: underline;
+   }
+  /* .txt_field span:before{
+   content: '';
+   position: absolute;
+   top: 40px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background-color: #2691d9;
+  } */
+  /* .txt_field input:focus ~ label{
+top:   20px;
+color:  #2691d9;
+
+  }
+  .txt_field input:valid  label{
+
+  } */
+
+
+  
+
+/* header {
+    background: linear-gradient(to right, #6a1b9a, #f03bea);
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active {
+    color: #33B5FF;
+} */
+
+ #main nav{
+  height: 12%;
+  display: flex;
+  align-items: start;
+  
+}
+
+#main nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 10px;
+
+}
+#main nav ul li a{
+  text-decoration: none;
+  color: #FFF;
+  font-size: 17px;
+  
+}
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+.col{
+  flex-basis: 50%;
+}
+h1{
+  color: #FFF;
+  text-shadow: 0 0 10px #000;
+  font-size: 100px;
+}
+h5{
+  color: #FFF;
+  text-shadow: 0 0 5px #999 ;
+  font-weight: 700;
+  font-size: 15px;
+}
+.card p{
+text-shadow: 0 0 15px #000;
+font-size: 15px;
+}
+ p{
+  color: #FFF;
+  font-size: 15px;
+  line-height: 15px;
+ }
+ .card{
+  width: 230px;
+  height: 270px;
+ display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background: linear-gradient(to bottom , #6a1b9a, rgba(0, 0, 0, 0.303));
+  background-position: center;
+  background-size: cover;
+  transition: 0.5s;
+ }
+
+ .card:hover{
+  transform: translateY(-10px);
+ }
+
+ button {
+  display: inline-block;
+  border-radius: 4px;
+background-color: #4471f0;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  padding: 16px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 10px;
+ }
+ 
+ button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ button:hover span {
+  padding-right: 15px;
+ }
+ 
+ button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+
+
+.menu {
+  font-family: 'Raleway', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.menu * {
+  box-sizing: border-box;
+}
+.menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  padding: 0;
+}
+.menu a {
+  padding: 0.5em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.menu a:before,
+.menu a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #2980b9;
+}
+.menu a:after {
+  left: 0;
+  top: 0;
+  padding: 0.5em 0;
+  position: absolute;
+  content: attr(data-hover);
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 0%;
+  overflow: hidden;
+}
+.menu a:hover:before,
+.menu .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+.menu a:hover:after,
+.menu .current a:after {
+  max-width: 100%;
+}
+.social-proof{
+	left:100px;
+	height:50px;
+}
+/* Add styles for other sections and elements as needed */
+
+.slit-in-vertical {
+	-webkit-animation: slit-in-vertical 0.45s ease-out both;
+	        animation: slit-in-vertical 0.45s ease-out both;
+}
+
+@-webkit-keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+@keyframes slit-in-vertical {
+  0% {
+    -webkit-transform: translateZ(-800px) rotateY(90deg);
+            transform: translateZ(-800px) rotateY(90deg);
+    opacity: 0;
+  }
+  54% {
+    -webkit-transform: translateZ(-160px) rotateY(87deg);
+            transform: translateZ(-160px) rotateY(87deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
+  }
+}
+
+/*---------------#region Alert--------------- */
+
+#dialogoverlay{
+  display: none;
+  opacity: .8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #707070;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox{
+  display: none;
+  position: absolute;
+  background: rgb(0, 47, 43);
+  border-radius:7px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.575);
+  transition: 0.3s;
+  width: 40%;
+  z-index: 10;
+  top:0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#dialogbox:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.911);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.pure-material-button-contained {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  padding: 0 16px;
+  min-width: 64px;
+  height: 36px;
+  vertical-align: middle;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  background-color: rgb(var(--pure-material-primary-rgb, 0, 77, 70));
+  /* background-color: rgb(1, 47, 61) */
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 36px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.pure-material-button-contained::-moz-focus-inner {
+  border: none;
+}
+
+/* ---------------Overlay--------------- */
+
+.pure-material-button-contained::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* Ripple */
+.pure-material-button-contained::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  padding: 50%;
+  width: 32px; /* Safari */
+  height: 32px; /* Safari */
+  background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1);
+  transition: opacity 1s, transform 0.5s;
+}
+
+/* Hover, Focus */
+.pure-material-button-contained:hover,
+.pure-material-button-contained:focus {
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:hover::before {
+  opacity: 0.08;
+}
+
+.pure-material-button-contained:focus::before {
+  opacity: 0.24;
+}
+
+.pure-material-button-contained:hover:focus::before {
+  opacity: 0.3;
+}
+
+/* Active */
+.pure-material-button-contained:active {
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.pure-material-button-contained:active::after {
+  opacity: 0.32;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0s;
+}
+
+/* Disabled */
+.pure-material-button-contained:disabled {
+  color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
+  background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
+  box-shadow: none;
+  cursor: initial;
+}
+
+.pure-material-button-contained:disabled::before {
+  opacity: 0;
+}
+
+.pure-material-button-contained:disabled::after {
+  opacity: 0;
+}
+
+#dialogbox > div{ 
+  background:#FFF; 
+  margin:8px; 
+}
+
+#dialogbox > div > #dialogboxhead{ 
+  background: rgb(0, 77, 70); 
+  font-size:19px; 
+  padding:10px; 
+  color:rgb(255, 255, 255); 
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+#dialogbox > div > #dialogboxbody{ 
+  background:rgb(0, 47, 43); 
+  padding:20px; 
+  color:#FFF; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+#dialogbox > div > #dialogboxfoot{ 
+  background: rgb(0, 47, 43); 
+  padding:10px; 
+  text-align:right; 
+}
+

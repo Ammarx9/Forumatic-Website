@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' media='screen' href='./general.css'>
+</head>
+
+<body>
+    <ul>
+        <li><a  href="./index.html">Home</a></li>
+        <li><a href="./login.html" id="N_login">Log in</a></li>
+        <li><a class="active" href="./savedReports.html">View Documents</a></li>
+    </ul><br><br>
+      <div class="container">
+    <h1 class="title">Course Report</h1>
+    <section class="section">
+        <!---------------------------------->
+        <!--Start of course identification-->
+        <!---------------------------------->
+        <table>
+            <tr>
+                <td>
+                    <h3 class="field">Course Title: <input type="text" id="I_course_title" disabled></h3>
+                </td>
+                <td>
+                    <h3 class="field">Course Code: <input type="text" id="I_course_code" disabled></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="field">Department: <input type="text" id="I_department" disabled></h3>
+                </td>
+                <td>
+                    <h3 class="field">Program: <input type="text" id="I_program" disabled></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="field">College: <input type="text" id="I_college" disabled></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="field">Institution: <input type="text" id="I_institution" disabled></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="field">Academic Year: <input type="text" id="I_academic_year" disabled></h3>
+                </td>
+                <td>
+                    <h3 class="field">Semester: <input type="text" id="I_semester" disabled></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="field">Course Instructor: <input type="text" id="I_course_instructor" disabled></h3>
+                </td>
+                <td>
+                    <h3 class="field">Course Coordinator: <input type="text" id="I_course_coordinator" disabled></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="field">Location: </h3><input type="radio" name="R_Location" id="Main campus" checked value="main">Main campus
+                    <input value="br" type="radio" name="R_Location" id="Branch">Branch
+                </td>
+                <td>
+                    <h3 class="field">Number of Section(s): <input type="number" id="I_number_of_section" disabled></h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <h3 class="field">Number of Starting Students: <input type="number" id="I_starting_student">
+                        </h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <h3 class="field">Number of Completed Students: <input type="number" id="I_Completed_student">
+                        </h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="field">Report Date: <input type="date" id="I_report_date"></h3>
+                </td>
+            </tr>
+        </table>
+        <!---------------------------------->
+        <!---End of course identification--->
+        <!---------------------------------->
+        <!---Start of Grade Distribution---->
+        <!---------------------------------->
+        <h2 style="color: 	#00BAAE;">A.Student results</h2>
+        <h3 style="color: 	#00BAAE;">1. Grade Distribution </h3>
+        <input type="file" id="grade_csv" accept=".csv">
+        <table>
+            <tr class="table_header">
+                <th colspan="9"> Grades </th>
+            </tr>
+            <tr class="table_header">
+                <th> A+ </th>
+                <th> A </th>
+                <th> B+ </th>
+                <th> B </th>
+                <th> C+ </th>
+                <th> C </th>
+                <th> D+ </th>
+                <th> D </th>
+                <th> F </th>
+            </tr>
+            <tr>
+                <td><input type="number" id="I_grade_a_plus" value="0"></td>
+                <td><input type="number" id="I_grade_a" value="0"></td>
+                <td><input type="number" id="I_grade_b_plus" value="0"></td>
+                <td><input type="number" id="I_grade_b" value="0"></td>
+                <td><input type="number" id="I_grade_c_plus" value="0"></td>
+                <td><input type="number" id="I_grade_c" value="0"></td>
+                <td><input type="number" id="I_grade_d_plus" value="0"></td>
+                <td><input type="number" id="I_grade_d" value="0"></td>
+                <td><input type="number" id="I_grade_f" value="0"></td>
+            </tr>
+
+            <tr>
+                <th class="table_header" colspan="9">Percentage </th>
+            </tr>
+            <tr><td><input type="number" id="I_grade-a_plus_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-a_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-b_plus_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-b_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-c_plus_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-c_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-d_plus_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-d_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade-f_Percentage" value="0"></td></tr>
+
+
+            <tr>
+                <td><label id="L_grade_a_plus"></label></td>
+                <td><label id="L_grade_a"></label></td>
+                <td><label id="L_grade_b_plus"></label></td>
+                <td><label id="L_grade_b"></label></td>
+                <td><label id="L_grade_c_plus"></label></td>
+                <td><label id="L_grade_c"></label></td>
+                <td><label id="L_grade_d_plus"></label></td>
+                <td><label id="L_grade_d"></label></td>
+                <td><label id="L_grade_f"></label></td>
+            </tr>
+            <tr class="table_header">
+                <th colspan="9"> Status Distributions </th>
+            </tr>
+            <tr class="table_header">
+                <th> Denied Entry</th>
+                <th> In progress </th>
+                <th> Incomplete </th>
+                <th> Pass </th>
+                <th> Fail </th>
+                <th> Withdrawn </th>
+            </tr>
+            <tr>
+                <td><input type="number" id="I_grade_denied_entry" value="0"></td>
+                <td><input type="number" id="I_grade_in_progress" value="0"></td>
+                <td><input type="number" id="I_grade_incomplete" value="0"></td>
+                <td><input type="number" id="I_grade_pass" value="0"></td>
+                <td><input type="number" id="I_grade_fail" value="0"></td>
+                <td><input type="number" id="I_grade_withdrawn" value="0"></td>
+            </tr>
+
+            <tr>
+                <th class="table_header" colspan="9">Percentage </th>
+            </tr>
+            <tr><td><input type="number" id="I_grade_denied_entry_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade_in_progress_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade_incomplete_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade_pass_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade_fail_Percentage" value="0"></td>
+                <td><input type="number" id="I_grade_withdrawn_Percentage" value="0"></td>
+            
+            <tr>
+                <td><label type="number" id="L_grade_denied_entry"></label></td>
+                <td><label type="number" id="L_grade_in_progress"></label></td>
+                <td><label type="number" id="L_grade_incomplete"></label></td>
+                <td><label type="number" id="L_grade_pass"></label></td>
+                <td><label type="number" id="L_grade_fail"></label></td>
+                <td><label type="number" id="L_grade_withdrawn"></label></td>
+            </tr>
+        </table>
+        <!----------------------------------------->
+        <!--------End of Grade Distribution-------->
+        <!----------------------------------------->
+        <!---Start of Grade Distribution Comment--->
+        <!----------------------------------------->
+        <h3 style="color: 	#00BAAE;">2. Comment on Student Grades  </h3>
+        <input type="button" value="Generate Comment" id="B_generateGradeComment">
+        <textarea id="I_grade_comment" cols="100" rows="4" style="width: 100%;"></textarea>
+        <!----------------------------------------->
+        <!----End of Grade Distribution Comment---->
+        <!----------------------------------------->
+        <!--------------Start of CLO--------------->
+        <!----------------------------------------->
+        <h2 style="color: 	#00BAAE;" >B.Course Learning Outcomes</h2>
+        <h3 style="color: 	#00BAAE;">1. Course Learning Outcomes Assessment Results  </h3>
+        <input type="button" value="Generate Comment" id="B_generateCLOComment">
+        <table id="T_CLO">
+            <thead>
+                <tr class="table_header">
+                    <th rowspan="2"></th>
+                    <th rowspan="2">Course Learning Outcomes (CLOs)</th>
+                    <th rowspan="2">Related PLOs Code</th>
+                    <th rowspan="2">Assessment Methods</th>
+                    <th colspan="2">Assessment Results</th>
+                    <th rowspan="2">Comment on Assessment Results</th>
+                </tr>
+                <tr class="table_header">
+                    <th>Targeted Level</th>
+                    <th>Actual Level</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr class="table_header" id="T_CLOKnowledge">
+                    <th class="numberCloQ">1</th>
+                    <th class="titleCloQ" colspan="7" >Knowledge and Understanding:</th>
+                </tr>
+    
+                <tr class="table_header" id="T_CLOSkill">
+                    <th>2</th>
+                    <th colspan="7" class="titleCloQ">Skills:</th>
+                </tr>
+    
+                <tr class="table_header" id="T_CLOValue">
+                    <th>3</th>
+                    <th colspan="7" class="titleCloQ">Values, autonomy, and responsibility:</th>
+                </tr>
+            </tbody>
+        </table>
+        <!----------------------------------------->
+        <!---------------End of CLO---------------->
+        <!----------------------------------------->
+        <h3 style="color: 	#00BAAE;">2. Recommendations </h3>
+        <input type="button" value="Generate Comment" id="B_generateRecommendationsComment">
+        <textarea id="I_recommandations" cols="100" rows="4" style="width: 100%;"></textarea>
+        <h2 style="color: 	#00BAAE;">C. Topics not covered</h2>
+        <table id="T_topicsNotCovered">
+            <tr>
+                <th class="table_header">Topic</th>
+                <th class="table_header">Reason for Not Covering/Discrepancies</th>
+                <th class="table_header">Extent of their Impact on Learning Outcomes</th>
+                <th class="table_header">Compensating Action</th>
+            </tr>
+            <tr id="R_topicsNotCoveredButton">
+                <td><input type="button" value="add" id="B_topics_not_covered_row_adder"></td>
+                <td><input type="button" value="remove" id="B_topics_not_covered_row_remover" style="background-color: red;"></td>
+            </tr>
+            
+            
+
+        </table>
+        <!----------------------------------------->
+        <!-----------Topics not covered------------>
+        <!----------------------------------------->
+        <h1 style="color: 	#00BAAE;">D. Course Improvement Plan (if any) </h1>
+        <table id="T_courseImprovments">
+
+            <tr>
+                <th class="table_header">Recommendations</th>
+                <th class="table_header">Actions</th>
+                <th class="table_header">Needed Support</th>
+
+            </tr>
+            <tr id="R_courseImprovmentsButton">
+                <th><input type="button" value="add" id="B_course_improvment_row_adder"></th>
+                <td><input type="button" value="remove" id="B_course_improvment_row_remover" style="background-color: red;"></td>
+            </tr>
+
+        </table>
+        <div id="email-list-container">
+            <div id="email-list">
+              <!-- Emails will be displayed here -->
+            </div>
+          </div>
+          <div id="add-email-container">
+            <button id="add-email-button" class="button" >Add Email</button>
+            <div id="email-input-container" style="display: none;">
+              <input type="email" id="email" placeholder="Enter email">
+              <button class="button"  id="add-button">Add</button>
+              <button class="buttonRed" id="close-button">Close</button>
+            </div>
+          </div>
+ 
+
+   <div class="button-container">
+    <input type="button" value="Save" id="B_save"> 
+    <input type="button" value="export report" id="B_exportReport">
+    </div>
+  
+ 
+
+         
+
+    </section>
+    </aside>
+</div>
+    <script src="./javascript/courseReport.bundle.js"></script>
+</body>
+
+</html>
+<!--hello-->

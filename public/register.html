@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset='utf-8'>
+    <title>login here</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='general.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+</head>
+<body >
+    <div id="login_main">
+        <div class="navBar">
+            <ul >
+                <li><a  href="./index.html">Home</a></li>
+                <li><a style="  border-bottom: 3px solid white;
+                    " href="./login.html" id="N_login">Log in</a></li>
+                <!-- <li><a href="./savedReports.html">View Documents</a></li> -->
+            </ul>
+          </div>
+        <br><br>
+
+        
+        <section class="login">
+             
+          <div class="login_center">
+    
+            <div class="login-form controlcentered" id="center">
+                <h1 >Sign up</h1>
+                <label >department</label>
+                <select name="s_department" id="s_department"><option value="none">Please choose your department</option></select>
+                <div class="txt_field">
+                    <input type="text"   id="user_name">
+                    <span></span>
+                    <label >name</label>
+                </div>
+               <div class="txt_field" >
+                   <input type="email"   id="user_email">
+                   
+                <label >email</label>
+               </div>
+               <div class="txt_field"> 
+                   <input type="password"  required  id="user_password">
+                  
+                <label for="">passsword</label>
+            </div >
+               
+             
+                <input  class="btn_reg" type="submit" value="Register" id="user_register">
+                <div class="singup" >Already have an account? <a href="login.html">Sign in</a> </div>
+            </div>
+            </div>
+   
+          </section>
+    </div>
+  
+ 
+
+
+    <script src="./javascript/register.bundle.js"></script>
+</body>
+</html>

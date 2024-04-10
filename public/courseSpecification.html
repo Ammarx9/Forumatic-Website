@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./general.css">
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./login.html" id="N_login">Log in</a></li>
+        <li><a href="./savedReports.html">View Documents</a></li>
+    </ul><br><br>
+    <div class="container">
+        <h1 class="title">Course Specification</h1>
+
+        <table id="course_specification">
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">Course tile: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter Course Title" id="I_Course_Title" disabled></td>
+            </tr>
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">Course Code: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter Course Code" id="I_Course_Code" disabled></td>
+            </tr>
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">Program: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter Program" id="I_Program"></td>
+            </tr>
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">Department: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter Department" id="I_Department" disabled></td>
+            </tr>
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">College: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter College" id="I_College" disabled></td>
+            </tr>
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">Institution: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter Institution" id="I_Institution" disabled></td>
+            </tr>
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">Version: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter Version" id="I_Version" disabled></td>
+            </tr>
+            <tr class="border_bottom">
+                <td>
+                    <h3 class="field">Last Revision Date: </h3>
+                </td>
+                <td><input type="text" placeholder="Enter Last Revision Date" id="I_Last_Revision_Data" disabled></td>
+            </tr>
+        </table>
+        <!-------------------------------------------------->
+        <!-----Start of { Course Identification } table----->
+        <!-------------------------------------------------->
+        <h1 class="sub_section_title">A. General Information About the Course:</h1>
+        <h1 class="title">1. Course Identification</h1>
+        <table id="course_identification" class="course_identification">
+            <tr>
+                <td>
+                    <h3>1. Credit Hours: </h3>
+                </td>
+                <td colspan="5"><input type="text" id="I_creadit_hours"></td>
+            </tr>
+            <tr class="table_header">
+                <td colspan="6">
+                    <h3>2. Course Type:</h3>
+                </td>
+            </tr>
+            <tr>
+                <td class="table_header">
+                    <h4>A.</h4>
+                </td>
+                <td bgcolor="white">
+                    <label for="I_course_type_a" style="color:black">
+                        <input type="radio" style="color:black" name="I_course_type_a" id="University"
+                            value="University" checked>University
+                    </label>
+                </td>
+                <td bgcolor="white">
+                    <label for="I_course_type_a" style="color:black">
+                        <input type="radio" name="I_course_type_a" id="College" value="College">College
+                    </label>
+                </td>
+                <td bgcolor="white">
+                    <label for="I_course_type_a" style="color:black">
+                        <input type="radio" name="I_course_type_a" id="Department" value="Department">Department
+                    </label>
+                </td>
+                <td bgcolor="white">
+                    <label for="I_course_type_a" style="color:black">
+                        <input type="radio" name="I_course_type_a" id="Track" value="Track">Track
+                    </label>
+                </td>
+                <td bgcolor="white">
+                    <label for="I_course_type_a" style="color:black">
+                        <input type="radio" name="I_course_type_a" id="Others" value="Others">Others
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="table_header">
+                    <h4>B.</h4>
+                </td>
+                <td bgcolor="white">
+                    <label for="I_course_type_b" style="color:black">
+                        <input type="radio" name="I_course_type_b" id="Required" value="Required" checked>Required
+                    </label>
+                </td>
+                <td bgcolor="white">
+                    <label for="I_course_type_b" style="color:black">
+                        <input type="radio" name="I_course_type_b" id="Elective" value="Elective">Elective
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td class="table_header">
+                    <h3>3. Level/Year at which this course is offered: </h3>
+                </td>
+                <td colspan="3">
+                    <h4>Level: <input type="text" id="I_course_level"></h4>
+                </td>
+                <td colspan="2">
+                    <h4>Year: <input type="text" id="I_course_year"></h4>
+                </td>
+            </tr>
+            <tr class="table_header">
+                <td colspan="6">
+                    <h3>4. Course General Description:</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="text" id="I_course_general_description">
+                </td>
+            </tr>
+            <tr class="table_header">
+                <td colspan="6">
+                    <h3>5. Pre-requirements for this course (if any): </h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="text" id="I_pre_requirements">
+                </td>
+            </tr>
+            <tr class="table_header">
+                <td colspan="6">
+                    <h3>6. Course Main Objective(s):</h3>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <input type="text" id="I_course_main_objectives">
+                </td>
+            </tr>
+        </table>
+        <!------------------------------------------>
+        <!--End of { Course Identification } table-->
+        <!------------------------------------------>
+        <!-----Start of { Teaching Mode } table----->
+        <!------------------------------------------>
+        <h1 class="title">2. Teaching Mode (mark all that apply) </h1>
+        <table id="teaching_mode">
+            <tr class="table_header">
+                <th>
+                    No.
+                </th>
+                <th>
+                    Mode of Intsruction
+                </th>
+                <th>
+                    Contact Hours
+                </th>
+                <th>
+                    Percentage
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>1</h3>
+                </td>
+                <td>
+                    <h3>
+                        Traditional Classroom
+                    </h3>
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_traditional_contact_hours">
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_traditional_percent">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>2</h3>
+                </td>
+                <td>
+                    <h3>
+                        E-Learning
+                    </h3>
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_e_learning_contact_hours">
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_e_learning_percent">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>3</h3>
+                </td>
+                <td>
+                    <h3>
+                        Hybrid
+                    </h3>
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_hybrid_contact_hours">
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_hybrid_percent">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>4</h3>
+                </td>
+                <td>
+                    <h3>
+                        Distance Learning
+                    </h3>
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_distance_learning_contact_hours">
+                </td>
+                <td>
+                    <input type="text" id="I_taching_mode_distance_learning_percent">
+                </td>
+            </tr>
+        </table>
+        <!------------------------------------------>
+        <!------End of { Teaching Mode } table------>
+        <!------------------------------------------>
+        <!-----Start of { Contact Hours } table----->
+        <!------------------------------------------>
+        <h1 class="title">3. Contact Hours</h1>
+        <table id="contact_hours">
+            <tr class="table_header">
+                <td>
+                    <h3>
+                        No.
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Activity
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Contact Hours
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        1
+                    </h4>
+                </td>
+                <td>
+                    <h4>
+                        Lectures
+                    </h4>
+                </td>
+                <td>
+                    <input type="number" id="I_contact_hours_lectures">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        2
+                    </h4>
+                </td>
+                <td>
+                    <h4>
+                        Laboratory/Studio
+                    </h4>
+                </td>
+                <td>
+                    <input type="number" id="I_contact_hours_laboratory">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        3
+                    </h4>
+                </td>
+                <td>
+                    <h4>
+                        Field
+                    </h4>
+                </td>
+                <td>
+                    <input type="number" id="I_contact_hours_field">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        4
+                    </h4>
+                </td>
+                <td>
+                    <h4>
+                        Tutorial
+                    </h4>
+                </td>
+                <td>
+                    <input type="number" id="I_contact_hours_tutorial">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>
+                        5
+                    </h4>
+                </td>
+                <td>
+                    <h4>
+                        Others(specify)
+                    </h4>
+                </td>
+                <td>
+                    <input type="text" id="I_contact_hours_other">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="cloQustion">
+                    <h3>
+                        Total
+                    </h3>
+                </td>
+                <td class="cloQustion">
+                    <h3 id="L_contact_hours_total">
+
+                    </h3>
+                </td>
+            </tr>
+        </table>
+        <h1 class="sub_section_title">B. Course Learning Outcomes (CLOs),<br>Teaching Strategies and Assessment Methods
+        </h1>
+        <!------------------------------------------>
+        <!------End of { Contact Hours } table------>
+        <!----------Start of { CLO } table---------->
+        <table id="t_CLO">
+            <thead>
+                <tr class="table_header">
+                    <th></th>
+                    <th>Course Learning Outcomes (CLOs)</th>
+                    <th>Related PLOs Code</th>
+                    <th>Teaching Strategies</th>
+                    <th>Assessment Methods</th>
+                </tr>
+
+            </thead>
+            
+            <tr class="table_header" id="T_CLOKnowledge">
+                <th class="numberCloQ">1</th>
+                <th class="titleCloQ" colspan="7" >Knowledge and Understanding:</th>
+            </tr>
+            <tr>
+                <td><select name="S_knowledge" id="S_knowledge"><option value=""></option></select></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Create" id="b_createCLOKnowledge"></td>
+            </tr>
+
+            <tr class="table_header" id="T_CLOSkill">
+                <th>2</th>
+                <th colspan="7" class="titleCloQ">Skills:</th>
+            </tr>
+            <tr>
+                <td><select name="S_skill" id="S_knowledge"><option value=""></option></select></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Create" id="b_createCLOSkill"></td>
+            </tr>
+
+            <tr class="table_header" id="T_CLOValue">
+                <th>3</th>
+                <th colspan="7" class="titleCloQ">Values, autonomy, and responsibility:</th>
+            </tr>
+            <tr>
+                <td><select name="S_value" id="S_knowledge"><option value=""></option></select></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Create" id="b_createCLOValue"></td>
+            </tr>
+        </table>
+        <!-----------End of { CLO } tabl-e---------->
+        <!------------------------------------------>
+        <!----Start of { Course Contents } table---->
+        <!------------------------------------------>
+        <h1 class="sub_section_title">C. Course Content</h1>
+        <table id="T_course_content">
+            <tr class="table_header">
+                <td>
+                    <h3>
+                        No
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        List of Topic
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Contact Hours
+                    </h3>
+                </td>
+            </tr>
+            <tr id="R_courseContentButton">
+                <td>
+                    <input type="button" value="Add" id="B_course_content_row_adder">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="cloQustion">
+                    <h3>Total</h3>
+                </td>
+                <td class="cloQustion">
+                    <h3 id="L_course_content_total"></h3>
+                </td>
+            </tr>
+        </table>
+        <!----------------------------------------------------------->
+        <!--------------End of { Course Contents } table------------->
+        <!----------------------------------------------------------->
+        <!-----Start of { Students Assessment Activities } table----->
+        <!----------------------------------------------------------->
+        <h1 class="sub_section_title">D. Student Assessment Activities</h1>
+        <table id="T_assessmentActivities">
+            <tr class="table_header">
+                <td>
+                    <h3>
+                        No
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Assessment Activities
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Assessment Timing (in weeks)
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        Percentage of Total Assessment Score
+                    </h3>
+                </td>
+            </tr>
+            <tr id="R_assessmentActivitiesButton">
+                <td>
+                    <input type="button" value="Add" id="B_student_assessment_activity_row_adder">
+                </td>
+            </tr>
+        </table>
+        <!---------------------------------------------------------------->
+        <!--------End of { Students Assessment Activities } table--------->
+        <!---------------------------------------------------------------->
+        <!------Start of { References and Learning Resources } table------>
+        <!---------------------------------------------------------------->
+        <h1>E. Learning Resources and Facilities</h1>
+        <h2>1. References and Learning Resources</h2>
+        <table>
+            <tr>
+                <td class="table_header">
+                    <h3>Essential References: </h3>
+                </td>
+                <td>
+                    <input type="text" name="" id="I_students_assessment_activities_essential">
+                </td>
+            </tr>
+            <tr>
+                <td class="table_header">
+                    <h3>Supportive References: </h3>
+                </td>
+                <td>
+                    <input type="text" name="" id="I_students_assessment_activities_supportive">
+                </td>
+            </tr>
+            <tr>
+                <td class="table_header">
+                    <h3>Electronic Materials: </h3>
+                </td>
+                <td>
+                    <input type="text" name="" id="I_students_assessment_activities_electronic">
+                </td>
+            </tr>
+            <tr>
+                <td class="table_header">
+                    <h3>Other Learning Materials: </h3>
+                </td>
+                <td>
+                    <input type="text" name="" id="I_students_assessment_activities_other">
+                </td>
+            </tr>
+        </table>
+        <!---------------------------------------------------------------->
+        <!-------End of { References and Learning Resources } table------->
+        <!---------------------------------------------------------------->
+        <!------Start of { Required Facilities and equipment } table------>
+        <!---------------------------------------------------------------->
+        <h2>2. Required Facilities and equipment</h2>
+        <table>
+            <tr class="table_header">
+                <th>
+                    <h3>Items</h3>
+                </th>
+                <th>
+                    <h3>Resources</h3>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>facilities</h3>
+                    <h5>(Classrooms, laboratories, exhibition rooms, simulation rooms, etc.)</h5>
+                </th>
+                <td>
+                    <input type="text" name="" id="I_required_facilities_facilities">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Technology equipment</h3>
+                    <h5>(projector, smart board, software)</h5>
+                </th>
+                <td>
+                    <input type="text" name="" id="I_required_facilities_technology">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Other equipment</h3>
+                    <h5>(depending on the nature of the specialty)</h5>
+                </th>
+                <td>
+                    <input type="text" name="" id="I_required_facilities_Other">
+                </td>
+            </tr>
+        </table>
+        <!---------------------------------------------------------------->
+        <!-------End of { Required Facilities and equipment } table------->
+        <!---------------------------------------------------------------->
+        <!--------Start of { Assessment of Course Quality  } table-------->
+        <!---------------------------------------------------------------->
+        <h1>F. Assessment of Course Quality </h1>
+        <table id="T_assessmentCourseQuality">
+            <tr class="table_header">
+                <th>
+                    <h3>Assessment Areas/Issues</h3>
+                </th>
+                <th>
+                    <h3>Assessor</h3>
+                </th>
+                <th>
+                    <h3>Assessment Methods</h3>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h4>Effectiveness of teaching</h4>
+                </th>
+                <td>
+                    <input type="text" name="" id="assessment_quality_teaching_assessor_1">
+                </td>
+                <td>
+                    <input type="text" name="" id="assessment_quality_teaching_method_1">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h4>Effectiveness of <br>Students assessment</h4>
+                </th>
+                <td>
+                    <input type="text" name="" id="assessment_quality_assessment_assessor_2">
+                </td>
+                <td>
+                    <input type="text" name="" id="assessment_quality_assessment_method_2">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h4>Quality of learning resources</h4>
+                </th>
+                <td>
+                    <input type="text" name="" id="assessment_quality_resources_assessor_3">
+                </td>
+                <td>
+                    <input type="text" name="" id="assessment_quality_resources_method_3">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h4>The extent to which CLOs have <br>been achieved</h4>
+                </th>
+                <td>
+                    <input type="text" name="" id="assessment_quality_achieved_assessor">
+                </td>
+                <td>
+                    <input type="text" name="" id="assessment_quality_achieved_method">
+                </td>
+            </tr>
+            <tr id="R_assessmentCourseQuality">
+                <th id="C_assessment_of_quality_cell">
+                    <h4>Other</h4>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Add" value="" id="B_assessment_of_quality_row_adder">
+                </td>
+            </tr>
+        </table>
+        <!---------------------------------------------------------------->
+        <!----------End of { Assessment of Course Quality } table--------->
+        <!---------------------------------------------------------------->
+        <!-----------Start of { Specification Approval  } table----------->
+        <!---------------------------------------------------------------->
+        <h1>G. Specification Approval</h1>
+        <table>
+            <tr>
+                <th class="table_header">
+                    <h3>COUNCIL /COMMITTEE</h3>
+                </th>
+                <td>
+                    <input type="text" name="" id="I_approval_council">
+                </td>
+            </tr>
+            <tr>
+                <th class="table_header">
+                    <h3>REFERENCE NO.</h3>
+                </th>
+                <td>
+                    <input type="text" name="" id="I_approval_refernce">
+                </td>
+            </tr>
+            <tr>
+                <th class="table_header">
+                    <h3>DATE</h3>
+                </th>
+                <td>
+                    <input type="text" name="" id="I_approval_date">
+                </td>
+            </tr>
+        </table>
+        <div class="btn-group">
+            <input type="button" value="save" id="B_save" style="width: 100%;">
+
+        </div>
+        <aside class="option_bar">
+            <ul>
+                <li>report</li>
+                <li>saved report</li>
+                <li>send report</li>
+
+            </ul>
+        </aside>
+    </div>
+
+
+    <script src="./javascript/courseSpecification.bundle.js"></script>
+</body>
+
+</html>

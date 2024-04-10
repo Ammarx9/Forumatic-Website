@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Section</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./general.css"/>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./login.html" id="N_login">Log in</a></li>
+        <li><a href="./savedReports.html">View Documents</a></li>
+    </ul><br><br>
+    <div class ="container">
+
+        <h1>Create New Section</h1>
+        
+        <table>
+            <tr>
+                <th>
+                    <h3>Location:</h3>
+                    <input type="radio" name="R_campus" value="Main Campus" id="R_campus_mainCampus">Main Campus
+                    <input type="radio" name="R_campus" value="Branch" id="R_campus_branch">Branch
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <h3>Course:
+                        <select name="S_course" id="S_course"></select>
+                    </h3>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Instructor:
+                        <select name="S_instructor" id="S_instructor"></select>
+                    </h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Coordinator:
+                        <select name="S_coordinator" id="S_coordinator"></select>
+                    </h3>
+                </td>
+            </tr>
+        </table>
+
+        <input type="button" value="Create" style="width: 100%;" id="B_create">
+
+    </div>
+    <script src="./javascript/createSection.bundle.js"></script>
+</body>
+</html>

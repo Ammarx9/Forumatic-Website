@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>saved specifications</title>
+    <link rel="stylesheet" href="general.css" />
+	<style>
+	#overlay {
+	  position: fixed;
+	  display: none;
+	  width: 100%;
+	  height: 100%;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: rgba(0,0,0,0.5);
+	  z-index: 2;
+	  cursor: pointer;
+	}
+	#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: #00BFFF;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+/* ---------------Animation---------------- */
+
+
+/*#endregion Alert*/
+</style>
+  </head>
+  <body>
+    <ul>
+      <li><a  href="./index.html">Home</a></li>
+      <li><a href="./login.html" id="N_login">Log in</a></li>
+      <li><a class="active" href="./savedReports.html">View Documents</a></li>
+  </ul><br><br>
+</div>
+    <h1>saved reports</h1>
+	 <section class="section" style="margin-left: 120;">
+    </select>
+    <label >year</label>
+    <input type="number" id="year">
+    <label>term</label>
+    <input type="number" id="term">
+    <div style="    text-align: center;">
+      <input type="button" id="report_srch" disabled value="search" style="width: 50%; ">
+    </div>
+    <table class="view_report" id="view_report">
+      <thead>
+        <tr class="table_header">
+          <th>
+            <h3>Course Title</h3>
+          </th>
+          <th>
+            <h3>View</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+   </section>
+ </div>
+  <script src="./javascript/savedSpecifications.bundle.js"></script>
+  </body>
+</html>
